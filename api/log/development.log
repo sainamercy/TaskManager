@@ -137,3 +137,874 @@ Processing by UsersController#register as */*
 Completed 201 Created in 322ms (Views: 0.9ms | ActiveRecord: 18.4ms | Allocations: 44629)
 
 
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 10:45:42 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+...sername: user_params[:username}, email: user_params[:email])...
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+...e}, email: user_params[:email]).first
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+            save_user(id: user.id)
+            ^~~~~~~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:21: else without rescue is useless
+        else
+        ^~~~
+):
+  
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 10:49:39 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+...sername: user_params[:username}, email: user_params[:email])...
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+...e}, email: user_params[:email]).first
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+            save_user(id: user.id)
+            ^~~~~~~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:21: else without rescue is useless
+        else
+        ^~~~
+):
+  
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 10:53:08 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+...sername: user_params[:username}, email: user_params[:email])...
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+...e}, email: user_params[:email]).first
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+            save_user(id: user.id)
+            ^~~~~~~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:21: else without rescue is useless
+        else
+        ^~~~
+):
+  
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 10:59:30 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+...sername: user_params[:username}, email: user_params[:email])...
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+...e}, email: user_params[:email]).first
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+            save_user(id: user.id)
+            ^~~~~~~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:21: else without rescue is useless
+        else
+        ^~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:27: syntax error, unexpected ')', expecting `end'
+...ogout", status: :unathourized))
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:27: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:27: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:38: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:00:06 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+...sername: user_params[:username}, email: user_params[:email])...
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+...e}, email: user_params[:email]).first
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+            save_user(id: user.id)
+            ^~~~~~~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:21: else without rescue is useless
+        else
+        ^~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+...ogout", status: :unathourized))
+...                              ^
+):
+  
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:01:28 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+...sername: user_params[:username}, email: user_params[:email])...
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+...e}, email: user_params[:email]).first
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+            save_user(id: user.id)
+            ^~~~~~~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:21: else without rescue is useless
+        else
+        ^~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+...ogout", status: :unathourized))
+...                              ^
+):
+  
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:17: syntax error, unexpected '}', expecting ']'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:02:02 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting '}'
+...e], email: user_params[:email])}.first
+...                              ^
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+            save_user(id: user.id)
+            ^~~~~~~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:21: else without rescue is useless
+        else
+        ^~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+...ogout", status: :unathourized))
+...                              ^
+):
+  
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting '}'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:17: syntax error, unexpected ')', expecting '}'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:02:42 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+            save_user(id: user.id)
+            ^~~~~~~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:21: else without rescue is useless
+        else
+        ^~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+...ogout", status: :unathourized))
+...                              ^
+):
+  
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:28: syntax error, unexpected ')', expecting `end'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:03:25 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+            save_user(id: user.id)
+            ^~~~~~~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:21: else without rescue is useless
+        else
+        ^~~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:40: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:40: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:19: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: else without rescue is useless
+app/controllers/users_controller.rb:40: syntax error, unexpected `end', expecting end-of-input
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:06:13 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 19ms (Allocations: 1044)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:07:37 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:08:19 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 4ms (Allocations: 749)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:08:48 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:09:40 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:14:12 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:15:18 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:15:30 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1058)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:18:23 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 753)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTodos (20230323082530)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "description" text NOT NULL, "status" integer DEFAULT 0 NOT NULL, "priority" integer DEFAULT 0 NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_d94154aa95"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_todos_on_user_id" ON "todos" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230323082530"]]
+  [1m[36mTRANSACTION (11.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 11:59:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 861)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 12:15:21 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 12:26:33 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 12:27:38 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 12:28:44 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1058)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 12:30:30 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 841)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/application_controller.rb:25:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 12:31:31 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 32ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 13:12:22 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 13:12:25 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 2ms (Allocations: 752)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 13:13:00 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 13:24:12 +0300
+Processing by UsersController#check_login_status as */*
+Completed 500 Internal Server Error in 1ms (Allocations: 859)
+
+
+  
+TypeError (no implicit conversion of Time into String):
+  
+app/controllers/application_controller.rb:26:in `session_expired?'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 13:25:18 +0300
+Processing by UsersController#check_login_status as */*
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | Allocations: 1042)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 13:26:12 +0300
+Processing by UsersController#check_login_status as */*
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 7ms (Views: 5.4ms | Allocations: 522)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 13:27:04 +0300
+Processing by UsersController#check_login_status as */*
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | Allocations: 510)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 13:50:43 +0300
+Processing by UsersController#check_login_status as */*
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | Allocations: 330)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 13:51:37 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"test@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f208cf37fd8>, params: {"email"=>"test@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"test@mail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f208cf37fd8>, params: {"email"=>"test@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"test@mail.com"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'test@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f208cf37fd8>, params: {"email"=>"test@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"test@mail.com"}} }[0m
+Completed 401 Unauthorized in 313ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 36471)
+
+
+Started POST "/users/register" for 127.0.0.1 at 2023-03-23 13:52:21 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users/register"):
+  
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 13:52:33 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"mercys", "password"=>"[FILTERED]", "user"=>{"username"=>"mercys"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f2098083e68>, params: {"username"=>"mercys", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"mercys"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f2098083e68>, params: {"username"=>"mercys", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"mercys"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'mercys' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f2098083e68>, params: {"username"=>"mercys", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"mercys"}} }[0m
+Completed 401 Unauthorized in 260ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1224)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 13:52:39 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"mercys", "password"=>"[FILTERED]", "user"=>{"username"=>"mercys"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f20980c16f0>, params: {"username"=>"mercys", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"mercys"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f20980c16f0>, params: {"username"=>"mercys", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"mercys"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'mercys' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f20980c16f0>, params: {"username"=>"mercys", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"mercys"}} }[0m
+Completed 401 Unauthorized in 257ms (Views: 0.1ms | ActiveRecord: 0.2ms | Allocations: 1102)
+
+
+Started POST "/users/register" for 127.0.0.1 at 2023-03-23 13:53:13 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users/register"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-23 13:53:38 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"mercys", "email"=>"test@mail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"mercys", "email"=>"test@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f209815a080>, params: {"username"=>"mercys", "email"=>"test@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"mercys", "email"=>"test@mail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mercys"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mercys"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 284ms (Views: 11.4ms | ActiveRecord: 1.0ms | Allocations: 9459)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-23 13:53:56 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"mercysaina", "email"=>"test@mail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"mercysaina", "email"=>"test@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f208c12ad78>, params: {"username"=>"mercysaina", "email"=>"test@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"mercysaina", "email"=>"test@mail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mercysaina"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mercysaina"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 264ms (Views: 1.2ms | ActiveRecord: 1.0ms | Allocations: 5019)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-23 13:54:06 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"sainam", "email"=>"test@mail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam", "email"=>"test@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f208c2ef118>, params: {"username"=>"sainam", "email"=>"test@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"sainam", "email"=>"test@mail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sainam"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sainam"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 280ms (Views: 0.7ms | ActiveRecord: 1.0ms | Allocations: 4590)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-23 13:54:19 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"sainam", "email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam", "email"=>"saina@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f209c96c030>, params: {"username"=>"sainam", "email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"sainam", "email"=>"saina@mail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sainam"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "saina@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "sainam"], ["email", "saina@mail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-23 10:54:19.720472"], ["updated_at", "2023-03-23 10:54:19.720472"]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sainam"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "saina@mail.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 201 Created in 282ms (Views: 0.6ms | ActiveRecord: 10.1ms | Allocations: 5912)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 13:54:39 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f208c7c4e18>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f208c7c4e18>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'saina@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f208c7c4e18>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+Completed 200 OK in 263ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 1487)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 13:55:03 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f208c882300>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f208c882300>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'saina@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f208c882300>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+Completed 200 OK in 286ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 1422)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 13:55:39 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f209caecdd8>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f209caecdd8>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'saina@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f209caecdd8>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+Completed 200 OK in 256ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1422)
+
+
+Started POST "/users/login/check" for 127.0.0.1 at 2023-03-23 13:56:00 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users/login/check"):
+  
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 13:56:10 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 338)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 13:57:21 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#check_login_status as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 7ms (Views: 0.8ms | ActiveRecord: 0.4ms | Allocations: 787)
+
+
+Started GET "/users/login" for 127.0.0.1 at 2023-03-23 13:57:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/login"):
+  
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 13:58:00 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec8801bbd0>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec8801bbd0>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'saina@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec8801bbd0>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+Completed 200 OK in 300ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 37906)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:00:24 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/users_controller.rb:38: syntax error, unexpected ':', expecting ')'
+...(:username, :email, :password :user)
+...                              ^
+):
+  
+app/controllers/users_controller.rb:38: syntax error, unexpected ':', expecting ')'
+app/controllers/users_controller.rb:38: syntax error, unexpected ':', expecting ')'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:00:40 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec906ed0c8>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec906ed0c8>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'saina@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec906ed0c8>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+Completed 200 OK in 267ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 3679)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:01:14 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec94c25f00>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec94c25f00>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'saina@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec94c25f00>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+Completed 200 OK in 269ms (Views: 0.6ms | ActiveRecord: 1.5ms | Allocations: 3654)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:04:06 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:35:in `user'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec94e2b840>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:35:in `user'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec94e2b840>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'saina@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:35:in `user'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec94e2b840>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+Completed 200 OK in 278ms (Views: 0.6ms | ActiveRecord: 1.6ms | Allocations: 5820)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:04:24 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec95059b80>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec95059b80>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'saina@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec95059b80>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+Completed 200 OK in 263ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 3640)
+
+
+Started POST "/users/logout" for 127.0.0.1 at 2023-03-23 14:05:59 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users/logout"):
+  
+Started DELETE "/users/logout" for 127.0.0.1 at 2023-03-23 14:06:08 +0300
+Processing by UsersController#logout as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 552)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:06:40 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec9004e3e8>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec9004e3e8>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'saina@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec9004e3e8>, params: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"saina@mail.com"}} }[0m
+Completed 200 OK in 259ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 3433)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:11:54 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"saina@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"saina@mail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'saina@mail.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 268ms (Views: 0.4ms | ActiveRecord: 1.8ms | Allocations: 3560)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:12:25 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+[31mUnpermitted parameter: :username. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec94c2e358>, params: {"username"=>"sainam", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"sainam"}} }[0m
+[31mUnpermitted parameter: :username. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec94c2e358>, params: {"username"=>"sainam", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"sainam"}} }[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'sainam' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :username. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fec94c2e358>, params: {"username"=>"sainam", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"sainam"}} }[0m
+Completed 200 OK in 264ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 1577)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:12:58 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'sainam' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 267ms (Views: 1.0ms | ActiveRecord: 1.5ms | Allocations: 3570)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:15:18 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:20:39 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 518)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:21:41 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 207)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:22:03 +0300
+Processing by UsersController#check_login_status as */*
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:22:21 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'sainam' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 262ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 3226)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:23:12 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'sainam' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 258ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 3553)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:23:27 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:23:59 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 539)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:24:22 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 465)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:24:43 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 515)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:25:27 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 539)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:25:49 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 531)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:26:33 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 621)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:26:56 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 563)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:27:19 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 1.9ms | Allocations: 528)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:28:23 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 536)
+
+
+Started DELETE "/users/logout" for 127.0.0.1 at 2023-03-23 14:28:34 +0300
+Processing by UsersController#logout as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:28:50 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Filter chain halted as :session_expired? rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 14:29:07 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'sainam' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 283ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 3374)
+
+
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-23 14:29:18 +0300
+Processing by UsersController#check_login_status as */*
+  Parameters: {"username"=>"sainam", "password"=>"[FILTERED]", "user"=>{"username"=>"sainam"}}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 310)
+
+
