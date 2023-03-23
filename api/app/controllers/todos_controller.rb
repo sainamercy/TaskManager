@@ -10,10 +10,16 @@ class TodosController < ApplicationController
         end
     end
 
-    private
-    def invalid_priority
-        app_response(message: "failed", data: {info: err.message}, status: :unprocessable_entity)
+    def update
+        todo = user.todos.find(params[:id]).update(todo_params)
+        if todo
+            app_response(data: { info: 'updated todo successfully' })
+        else
+            app_response(message: 'failed', data: { info: 'something went wrong. could not update todo' }, status: :unprocessable_entity)
+        end
     end
+
+    private
 
     def todo_params
         params.permit(:title, :description, :status, :priority)

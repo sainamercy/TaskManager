@@ -1103,3 +1103,40 @@ Processing by TodosController#create as */*
 Completed 201 Created in 13ms (Views: 0.4ms | ActiveRecord: 4.6ms | Allocations: 3184)
 
 
+Started PUT "/todos/3" for 127.0.0.1 at 2023-03-23 14:49:40 +0300
+Processing by TodosController#update as */*
+  Parameters: {"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2, "id"=>"3", "todo"=>{"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:37:in `user'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ? AND "todos"."id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:14:in `update'
+[31mUnpermitted parameters: :id, :todo. Context: { controller: TodosController, action: update, request: #<ActionDispatch::Request:0x00007fec94a2aea8>, params: {"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2, "controller"=>"todos", "action"=>"update", "id"=>"3", "todo"=>{"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:14:in `update'
+  [1m[36mTodo Update (0.4ms)[0m  [1m[33mUPDATE "todos" SET "title" = ?, "priority" = ?, "updated_at" = ? WHERE "todos"."id" = ?[0m  [["title", "Testing no 3"], ["priority", 2], ["updated_at", "2023-03-23 11:49:40.837045"], ["id", 3]]
+  ↳ app/controllers/todos_controller.rb:14:in `update'
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:14:in `update'
+Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 9.6ms | Allocations: 10093)
+
+
+Started PUT "/todos/3" for 127.0.0.1 at 2023-03-23 14:50:40 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/todos_controller.rb:16: syntax error, unexpected ')', expecting =>
+...ted todo successfully' }, todo)
+...                              ^
+):
+  
+app/controllers/todos_controller.rb:16: syntax error, unexpected ')', expecting =>
+app/controllers/todos_controller.rb:16: syntax error, unexpected ')', expecting =>
+Started PUT "/todos/3" for 127.0.0.1 at 2023-03-23 14:51:36 +0300
+Processing by TodosController#update as */*
+  Parameters: {"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2, "id"=>"3", "todo"=>{"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:37:in `user'
+  [1m[36mTodo Load (0.2ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ? AND "todos"."id" = ? LIMIT ?[0m  [["user_id", 2], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/todos_controller.rb:14:in `update'
+[31mUnpermitted parameters: :id, :todo. Context: { controller: TodosController, action: update, request: #<ActionDispatch::Request:0x00007fec90a29890>, params: {"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2, "controller"=>"todos", "action"=>"update", "id"=>"3", "todo"=>{"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2}} }[0m
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 2.5ms | Allocations: 8706)
+
+
