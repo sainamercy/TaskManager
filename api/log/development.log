@@ -1008,3 +1008,98 @@ Processing by UsersController#check_login_status as */*
 Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 310)
 
 
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 14:41:46 +0300
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/todos_controller.rb:10: syntax error, unexpected `end', expecting ')'
+        end
+        ^~~
+/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/todos_controller.rb:21: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/todos_controller.rb:10: syntax error, unexpected `end', expecting ')'
+app/controllers/todos_controller.rb:21: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/todos_controller.rb:10: syntax error, unexpected `end', expecting ')'
+app/controllers/todos_controller.rb:21: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 14:42:10 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"Testing", "description"=>"I hope i do not bump into errors", "todo"=>{"title"=>"Testing", "description"=>"I hope i do not bump into errors"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:37:in `user'
+[31mUnpermitted parameter: :todo. Context: { controller: TodosController, action: create, request: #<ActionDispatch::Request:0x00007fec8800b5c8>, params: {"title"=>"Testing", "description"=>"I hope i do not bump into errors", "controller"=>"todos", "action"=>"create", "todo"=>{"title"=>"Testing", "description"=>"I hope i do not bump into errors"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("title", "description", "status", "priority", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Testing"], ["description", "I hope i do not bump into errors"], ["status", 0], ["priority", 0], ["user_id", 2], ["created_at", "2023-03-23 11:42:10.672232"], ["updated_at", "2023-03-23 11:42:10.672232"]]
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+Completed 201 Created in 52ms (Views: 0.5ms | ActiveRecord: 5.9ms | Allocations: 30152)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 14:42:39 +0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+  "title": "Testing",
+  "description": "I hope i do not bump into errors"
+  "priority": "LOW"
+}
+Processing by TodosController#create as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:37:in `user'
+Completed 422 Unprocessable Entity in 11ms (Views: 0.2ms | ActiveRecord: 0.1ms | Allocations: 941)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 14:42:57 +0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+  "title": "Testing",
+  "description": "I hope i do not bump into errors"
+  "priority": 8
+}
+Processing by TodosController#create as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:37:in `user'
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 818)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 14:43:53 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>8, "todo"=>{"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>8}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:37:in `user'
+[31mUnpermitted parameter: :todo. Context: { controller: TodosController, action: create, request: #<ActionDispatch::Request:0x00007fec94190b58>, params: {"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>8, "controller"=>"todos", "action"=>"create", "todo"=>{"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>8}} }[0m
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 993)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 14:44:09 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>"HIGH", "todo"=>{"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>"HIGH"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:37:in `user'
+[31mUnpermitted parameter: :todo. Context: { controller: TodosController, action: create, request: #<ActionDispatch::Request:0x00007fec94382a38>, params: {"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>"HIGH", "controller"=>"todos", "action"=>"create", "todo"=>{"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>"HIGH"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("title", "description", "status", "priority", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Testing"], ["description", "I hope i do not bump into errors"], ["status", 0], ["priority", 2], ["user_id", 2], ["created_at", "2023-03-23 11:44:09.297147"], ["updated_at", "2023-03-23 11:44:09.297147"]]
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+Completed 201 Created in 22ms (Views: 1.2ms | ActiveRecord: 8.9ms | Allocations: 3250)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 14:44:18 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>1, "todo"=>{"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>1}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:37:in `user'
+[31mUnpermitted parameter: :todo. Context: { controller: TodosController, action: create, request: #<ActionDispatch::Request:0x000055afd532ee40>, params: {"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>1, "controller"=>"todos", "action"=>"create", "todo"=>{"title"=>"Testing", "description"=>"I hope i do not bump into errors", "priority"=>1}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTodo Create (0.3ms)[0m  [1m[32mINSERT INTO "todos" ("title", "description", "status", "priority", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Testing"], ["description", "I hope i do not bump into errors"], ["status", 0], ["priority", 1], ["user_id", 2], ["created_at", "2023-03-23 11:44:18.722458"], ["updated_at", "2023-03-23 11:44:18.722458"]]
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+Completed 201 Created in 13ms (Views: 0.4ms | ActiveRecord: 4.6ms | Allocations: 3184)
+
+
