@@ -25,6 +25,11 @@ class TodosController < ApplicationController
         app_response(status: 204)
     end
 
+    def index
+        todos = user.todos.all
+        app_response(message: 'success', data: todos)
+    end
+
     private
 
     def todo_params

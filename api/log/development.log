@@ -1514,3 +1514,23 @@ Processing by TodosController#destroy as */*
 Completed 204 No Content in 19ms (Views: 0.3ms | ActiveRecord: 7.0ms | Allocations: 4845)
 
 
+Started GET "/todos" for 127.0.0.1 at 2023-03-23 15:17:20 +0300
+Processing by TodosController#index as */*
+  Parameters: {"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2, "todo"=>{"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:37:in `user'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/application_controller.rb:7:in `app_response'
+Completed 200 OK in 20ms (Views: 8.5ms | ActiveRecord: 2.1ms | Allocations: 8743)
+
+
+Started GET "/todos" for 127.0.0.1 at 2023-03-23 15:17:57 +0300
+Processing by TodosController#index as */*
+  Parameters: {"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2, "todo"=>{"title"=>"Testing no 3", "description"=>"I hope i do not bump into errors", "priority"=>2}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:37:in `user'
+  [1m[36mTodo Load (0.4ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/controllers/application_controller.rb:7:in `app_response'
+Completed 200 OK in 12ms (Views: 4.7ms | ActiveRecord: 0.8ms | Allocations: 1979)
+
+
