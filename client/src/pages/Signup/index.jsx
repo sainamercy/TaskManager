@@ -1,5 +1,5 @@
 // import { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { API_URL } from "../constants";
 // import { useNavigate } from "react-router-dom";
 
@@ -79,9 +79,9 @@ function Signup() {
       <button className="btn">sign up</button>
       <p>
         Already have an account?{" "}
-        <a href="#" className="formLink">
+        <Link to="/login" className="formLink">
           sign in here
-        </a>
+        </Link>
       </p>
     </form>
   );
