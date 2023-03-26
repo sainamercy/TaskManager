@@ -5,6 +5,7 @@
     --color-primary-darker: #0e49de;
     --color-secondary-darker: #ffbb00;
     --color-tertiary-darker: #fd424b;
+    --color-general: 	#C0C0C0;
     --gradient-primary: linear-gradient(to top left, #4a77e9, #5de1cd);
   }
   
@@ -175,7 +176,7 @@
     flex-direction: column;
     width: 400px;
     margin: auto;
-    border: 1px solid rgb(231, 230, 230);
+    border: 1px solid var(--color-general);
     padding: 30px;
     border-radius: 10px;
     font-size: 1.2rem;
@@ -190,10 +191,23 @@
     border-radius: 10rem;
   }
   .form button{
-    width: 50%;
     margin: auto;
   }
   .formLink{
     color: var(--color-tertiary);
   }
-  
+  .newTaskForm{
+    border: none;
+    width: 700px;
+
+  }
+  .newTaskForm input, .newTaskForm textarea{
+    border: none;
+    border-bottom: 1px solid var(--color-general);
+    border-radius: 0;
+    background-color: transparent;
+  }
+
+  input:focus, textarea:focus{
+    outline: 1px solid var(--color-general);
+  }

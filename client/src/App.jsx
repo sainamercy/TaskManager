@@ -1,8 +1,9 @@
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import { Route, Routes } from "react-router-dom";
+import NewTask from "./pages/NewTask";
 
 function App() {
   return <div className="main">
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<Home/>}/>
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/newtask" element={<NewTask/>}/>
     </Routes>
   </div>;
 }
