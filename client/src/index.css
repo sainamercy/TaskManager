@@ -169,4 +169,31 @@
     cursor: pointer;
     transition: all 0.3s;
   }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    border: 1px solid rgb(231, 230, 230);
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    gap: 12px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .form input{
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgb(199, 198, 198);
+    padding: 1.25rem 4.5rem;
+    border-radius: 10rem;
+  }
+  .form button{
+    width: 50%;
+    margin: auto;
+  }
+  .formLink{
+    color: var(--color-tertiary);
+  }
   
