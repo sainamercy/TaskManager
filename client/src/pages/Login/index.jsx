@@ -65,7 +65,7 @@ function Login() {
         <p>
           Don't have an account?{" "}
           <Link to="/signup" className="formLink">
-            sign un here
+            sign up here
           </Link>
         </p>
       </form>

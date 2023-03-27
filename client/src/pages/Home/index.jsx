@@ -8,7 +8,7 @@ function Home() {
         <span className="highlight">TaskBit</span>
       </h1>
       <h4>
-        A simpler and user-friendly app designed to help you stay on top of your
+        A simple and user-friendly app designed to help you stay on top of your
         tasks and increase your productivity.{" "}
       </h4>
       <Link to="/signup">
