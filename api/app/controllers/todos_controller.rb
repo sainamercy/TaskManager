@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
-    before_action :session_expired?
+    before_action :verify_auth
     
     def create
         todo = user.todos.create(todo_params)
@@ -33,6 +33,6 @@ class TodosController < ApplicationController
     private
 
     def todo_params
-        params.require(:todo).permit(:title, :description, :status, :priority)
+        params.permit(:title, :description, :status, :priority)
     end
 end

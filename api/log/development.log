@@ -1669,3 +1669,277 @@ Processing by TodosController#create as */*
 Completed 201 Created in 29ms (Views: 0.5ms | ActiveRecord: 12.8ms | Allocations: 3734)
 
 
+Started GET "/users" for 127.0.0.1 at 2023-03-27 11:23:18 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:26:11 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/saina/Development/Moringa-Course-Work/phase-4/taskmanagerproject/TaskManager/api/app/controllers/application_controller.rb:45: syntax error, unexpected ':', expecting `end'
+        render :json: {
+                    ^
+):
+  
+app/controllers/application_controller.rb:45: syntax error, unexpected ':', expecting `end'
+app/controllers/application_controller.rb:45: syntax error, unexpected ':', expecting `end'
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:26:39 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test@mailcom", "password"=>"[FILTERED]", "user"=>{"email"=>"test@mailcom"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'test@mailcom') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 401 Unauthorized in 23ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 22445)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:26:50 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"test@mailcom", "password"=>"[FILTERED]", "user"=>{"email"=>"test@mailcom"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'test@mailcom') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 401 Unauthorized in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 911)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:27:03 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"sainamercy@mailcom", "password"=>"[FILTERED]", "user"=>{"email"=>"sainamercy@mailcom"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'sainamercy@mailcom') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 894)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:27:14 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"mercy@mailcom", "password"=>"[FILTERED]", "user"=>{"email"=>"mercy@mailcom"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'mercy@mailcom') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 894)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:27:18 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"mercys@mailcom", "password"=>"[FILTERED]", "user"=>{"email"=>"mercys@mailcom"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'mercys@mailcom') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 401 Unauthorized in 4ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 883)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 11:28:15 +0300
+Processing by UsersController#register as */*
+  Parameters: {"email"=>"mercy@mailcom", "username"=>"mercy", "password"=>"[FILTERED]", "user"=>{"username"=>"mercy", "email"=>"mercy@mailcom"}}
+Completed 422 Unprocessable Entity in 312ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 16683)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 11:28:23 +0300
+Processing by UsersController#register as */*
+  Parameters: {"email"=>"mercy@mailcom", "username"=>"mercy", "password"=>"[FILTERED]", "user"=>{"username"=>"mercy", "email"=>"mercy@mailcom"}}
+Completed 422 Unprocessable Entity in 263ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 355)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 11:29:57 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#register as */*
+  Parameters: {"email"=>"mercy@mailcom", "username"=>"mercy", "password"=>"[FILTERED]", "user"=>{"username"=>"mercy", "email"=>"mercy@mailcom"}}
+Completed 422 Unprocessable Entity in 307ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 36703)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 11:30:40 +0300
+Processing by UsersController#register as */*
+  Parameters: {"email"=>"mercy@mailcom", "username"=>"mercys", "password"=>"[FILTERED]", "user"=>{"username"=>"mercys", "email"=>"mercy@mailcom"}}
+Completed 422 Unprocessable Entity in 265ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 11:31:21 +0300
+Processing by UsersController#register as */*
+  Parameters: {"email"=>"mercy@mailcom", "username"=>"mercys", "password"=>"[FILTERED]", "user"=>{"username"=>"mercys", "email"=>"mercy@mailcom"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fb1e412dcf0>, params: {"email"=>"mercy@mailcom", "username"=>"mercys", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"mercys", "email"=>"mercy@mailcom"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mercys"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mercy@mailcom"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mercys"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mercy@mailcom"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 292ms (Views: 4.5ms | ActiveRecord: 2.9ms | Allocations: 8883)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 11:31:37 +0300
+Processing by UsersController#register as */*
+  Parameters: {"email"=>"mercy@mailcom", "username"=>"mercysaina", "password"=>"[FILTERED]", "user"=>{"username"=>"mercysaina", "email"=>"mercy@mailcom"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fb1dc015ff0>, params: {"email"=>"mercy@mailcom", "username"=>"mercysaina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"mercysaina", "email"=>"mercy@mailcom"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mercysaina"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mercy@mailcom"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mercysaina"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mercy@mailcom"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 280ms (Views: 1.2ms | ActiveRecord: 1.1ms | Allocations: 4726)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 11:31:49 +0300
+Processing by UsersController#register as */*
+  Parameters: {"email"=>"mercy@mailcom", "username"=>"saina", "password"=>"[FILTERED]", "user"=>{"username"=>"saina", "email"=>"mercy@mailcom"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fb1d400c340>, params: {"email"=>"mercy@mailcom", "username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"saina", "email"=>"mercy@mailcom"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "saina"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mercy@mailcom"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "saina"], ["email", "mercy@mailcom"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-27 08:31:49.611266"], ["updated_at", "2023-03-27 08:31:49.611266"]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "saina"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "mercy@mailcom"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 201 Created in 299ms (Views: 0.6ms | ActiveRecord: 9.1ms | Allocations: 6042)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:32:35 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"saina", "password"=>"[FILTERED]", "user"=>{"username"=>"saina"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1d86be3d8>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1d86be3d8>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'saina' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1d86be3d8>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+Completed 422 Unprocessable Entity in 267ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 3483)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:33:13 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"saina", "password"=>"[FILTERED]", "user"=>{"username"=>"saina"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1e88a5df8>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1e88a5df8>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'saina' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1e88a5df8>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+Completed 422 Unprocessable Entity in 270ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 3529)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:33:56 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"saina", "password"=>"[FILTERED]", "user"=>{"username"=>"saina"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1e8af64e0>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1e8af64e0>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'saina' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1e8af64e0>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+Completed 200 OK in 278ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 3701)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:36:11 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"saina", "password"=>"[FILTERED]", "user"=>{"username"=>"saina"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1e8c85ea0>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1e8c85ea0>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'saina' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fb1e8c85ea0>, params: {"username"=>"saina", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"saina"}} }[0m
+Completed 200 OK in 270ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 1440)
+
+
+Started GET "/verify" for 127.0.0.1 at 2023-03-27 11:38:57 +0300
+Processing by ApplicationController#verify_auth as */*
+Completed 500 Internal Server Error in 3ms (Views: 0.3ms | Allocations: 816)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/application_controller.rb:7:in `app_response'
+app/controllers/application_controller.rb:88:in `standard_error'
+Started GET "/verify" for 127.0.0.1 at 2023-03-27 11:40:13 +0300
+Processing by ApplicationController#verify_auth as */*
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | Allocations: 692)
+
+
+Started GET "/verify" for 127.0.0.1 at 2023-03-27 11:41:30 +0300
+Processing by ApplicationController#verify_auth as */*
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | Allocations: 118)
+
+
+Started GET "/verify" for 127.0.0.1 at 2023-03-27 11:42:25 +0300
+Processing by ApplicationController#verify_auth as */*
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | Allocations: 233)
+
+
+Started GET "/verify" for 127.0.0.1 at 2023-03-27 11:42:52 +0300
+Processing by ApplicationController#verify_auth as */*
+Completed 200 OK in 2ms (Views: 0.5ms | Allocations: 339)
+
+
+Started GET "/verify" for 127.0.0.1 at 2023-03-27 11:44:40 +0300
+Processing by ApplicationController#verify_auth as */*
+Completed 200 OK in 1ms (Views: 0.3ms | Allocations: 355)
+
+
+Started GET "/verify" for 127.0.0.1 at 2023-03-27 11:45:04 +0300
+Processing by ApplicationController#verify_auth as */*
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 342)
+
+
+Started GET "/users/todos" for 127.0.0.1 at 2023-03-27 11:52:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/todos"):
+  
+Started GET "/todos" for 127.0.0.1 at 2023-03-27 11:52:40 +0300
+Processing by TodosController#index as */*
+  Parameters: {"username"=>"saina", "password"=>"[FILTERED]", "todo"=>{}}
+Filter chain halted as :verify_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 1.4ms | Allocations: 248)
+
+
+Started GET "/todos" for 127.0.0.1 at 2023-03-27 11:53:16 +0300
+Processing by TodosController#index as */*
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/verify" for 127.0.0.1 at 2023-03-27 11:54:55 +0300
+Processing by ApplicationController#verify_auth as */*
+Completed 422 Unprocessable Entity in 1ms (Views: 0.3ms | Allocations: 324)
+
+
+Started GET "/todos" for 127.0.0.1 at 2023-03-27 11:55:24 +0300
+Processing by TodosController#index as */*
+Completed 422 Unprocessable Entity in 2ms (Views: 0.4ms | Allocations: 300)
+
+
+Started GET "/todos" for 127.0.0.1 at 2023-03-27 11:56:50 +0300
+Processing by TodosController#index as */*
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | Allocations: 306)
+
+
+Started GET "/todos" for 127.0.0.1 at 2023-03-27 12:02:04 +0300
+Processing by TodosController#index as */*
+Completed 422 Unprocessable Entity in 2ms (Views: 0.9ms | Allocations: 181)
+
+
+Started GET "/todos" for 127.0.0.1 at 2023-03-27 12:02:14 +0300
+Processing by TodosController#index as */*
+Completed 422 Unprocessable Entity in 1ms (Views: 0.4ms | Allocations: 181)
+
+
+Started GET "/todos" for 127.0.0.1 at 2023-03-27 12:09:10 +0300
+Processing by TodosController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:87:in `user'
+  [1m[36mTodo Load (0.3ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 3]]
+  ↳ app/controllers/application_controller.rb:7:in `app_response'
+Completed 200 OK in 39ms (Views: 2.4ms | ActiveRecord: 2.5ms | Allocations: 15578)
+
+
