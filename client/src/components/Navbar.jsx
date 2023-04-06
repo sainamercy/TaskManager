@@ -3,7 +3,7 @@ function Navbar() {
   return (
     <nav className="nav">
       <Link to="/">
-        <img src="src/assets/logof.png" alt=" logo" className="nav__logo" />
+        <img src="/assets/logof.png" alt=" logo" className="nav__logo" />
       </Link>
       <ul className="nav__links">
         <li className="nav__item">
@@ -19,6 +19,11 @@ function Navbar() {
         <li className="nav__item">
           <Link className="nav__link nav__link--btn " to="/signup">
             Get Started
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link className="nav__link nav__link--btn " to="/signup">
+            Logout
           </Link>
         </li>
       </ul>
