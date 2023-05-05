@@ -196,9 +196,49 @@
     border-bottom: 1px solid var(--color-general);
     border-radius: 0;
     background-color: transparent;
+    padding: 1.25rem 4.5rem;
   }
 
   input:focus, textarea:focus{
-    outline: 1px solid var(--color-general);
-    padding: 1.25rem 4.5rem;
+    outline: none;
   }
+.todos{
+  width: 90%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  height: 87%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.todosNav{
+  border-bottom: 1px solid var(--color-general);
+  width: 90%;
+  margin: auto; 
+}
+.addHead{
+  display: flex;
+  justify-content: space-between;
+}
+.exit{
+  border: 1px solid var(--color-general);
+  color: var(--color-tertiary-darker);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.taskGroup{
+  border: 1px solid var(--color-general);
+  width: 30%;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.todosCont{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  height: 85%;
+}

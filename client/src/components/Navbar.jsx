@@ -12,7 +12,7 @@ function Navbar() {
           </Link>
         </li>
         <li className="nav__item">
-          <Link className="nav__link" to="#">
+          <Link className="nav__link" to="/todos">
             Tasks
           </Link>
         </li>

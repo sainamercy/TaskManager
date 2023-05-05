@@ -1,7 +1,8 @@
 // import axios from "axios";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // import { API_URL } from "../constants";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Priority = ({ currentValue, setPriority }) => {
   let priorities = [
@@ -31,7 +32,7 @@ const Priority = ({ currentValue, setPriority }) => {
             name={"priority"}
             id={name}
             value={id}
-            defaultchecked={currentValue === id}
+            defaultChecked={currentValue === id}
             required
             onChange={() => setPriority(id)}
           />
@@ -49,17 +50,25 @@ function NewTask() {
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState(0);
   //   const { user } = useAuthContext();
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
   //   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(title, description, priority);
+    navigate("/todos");
   };
   return (
     <form onSubmit={handleSubmit} className="newTaskForm form">
-      <h3>Add New Task!</h3>
+      <div className="addHead">
+        <h3>Add New Task!</h3>
+        <div className="exit">
+          <Link to="/todos" className="nav__link">
+            x
+          </Link>
+        </div>
+      </div>
       <label>Title:</label>
       <input
         type="text"
