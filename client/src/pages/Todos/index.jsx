@@ -21,9 +21,18 @@ function Todos() {
       </div>
       {/* main sec */}
       <div className="todosCont">
-        <TaskGroup title={"Todo"} />
-        <TaskGroup title={"Ongoing"} />
-        <TaskGroup title={"Completed"} />
+        <TaskGroup
+          title={"Todo"}
+          description={"This item hasn't been started"}
+        />
+        <TaskGroup
+          title={"Ongoing"}
+          description={"This is actively being worked on"}
+        />
+        <TaskGroup
+          title={"Completed"}
+          description={"This has been completed"}
+        />
       </div>
     </div>
   );
