@@ -7,12 +7,17 @@ function Navbar() {
       </Link>
       <ul className="nav__links">
         <li className="nav__item">
+          <Link className="nav__link" to="/">
+            Home
+          </Link>
+        </li>
+        <li className="nav__item">
           <Link className="nav__link" to="#">
             Tasks
           </Link>
         </li>
         <li className="nav__item">
-          <Link className="nav__link" to="/login">
+          <Link className="nav__link nav__link--btn" to="/login">
             Login
           </Link>
         </li>
