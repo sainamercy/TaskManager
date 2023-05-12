@@ -1,4 +1,6 @@
-export default function TaskGroup({ title, description }) {
+import TaskItem from "./TaskItem";
+
+function TaskGroup({ title, description }) {
   const titleColor = () => {
     if (title === "Todo") {
       return "red circle";
@@ -15,6 +17,11 @@ export default function TaskGroup({ title, description }) {
         <h3>{title}</h3>
       </div>
       <p>{description}</p>
+      <div className="task-items">
+        <TaskItem priority="High" status="Done" title="Task 1" />
+        <TaskItem priority="High" status="Done" title="Task 1" />
+      </div>
     </div>
   );
 }
+export default TaskGroup;
