@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
+import { isUserLoggedIn } from "../utils/auth";
+import network from "../utils/network";
 function Navbar() {
+  const onlogout = () => {
+    network.logout();
+  };
   return (
     <nav className="nav">
       <Link to="/">
@@ -11,23 +16,29 @@ function Navbar() {
             Home
           </Link>
         </li>
+        {isUserLoggedIn && (
+          <li className="nav__item">
+            <Link className="nav__link" to="/todos">
+              Tasks
+            </Link>
+          </li>
+        )}
+        {!isUserLoggedIn && (
+          <>
+            <li className="nav__item">
+              <Link className="nav__link nav__link--btn" to="/login">
+                Login
+              </Link>
+            </li>
+            <li className="nav__item">
+              <Link className="nav__link nav__link--btn " to="/signup">
+                Get Started
+              </Link>
+            </li>
+          </>
+        )}
         <li className="nav__item">
-          <Link className="nav__link" to="/todos">
-            Tasks
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link className="nav__link nav__link--btn" to="/login">
-            Login
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link className="nav__link nav__link--btn " to="/signup">
-            Get Started
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link className="nav__link nav__link--btn " to="/signup">
+          <Link className="nav__link nav__link--btn " to="/" onClick={onlogout}>
             Logout
           </Link>
         </li>

@@ -1,50 +1,46 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-// import { API_URL } from "../constants";
-// import { useNavigate } from "react-router-dom";
+import network from "../../utils/network";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Signup() {
-  //   const [email, setEmail] = useState("");
-  //   const [password, setPassword] = useState("");
-  //   const [full_name, setFullName] = useState("");
-  //   const [isLoading, setIsLoading] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  //   const handleSubmit = (e) => {
-  //     e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const details = {
+      email,
+      password,
+      username,
+    };
 
-  //     //TODO:: Handle validation
-  //     const details = {
-  //       email,
-  //       password,
-  //       full_name,
-  //     };
+    setIsLoading(true);
 
-  //     setIsLoading(true);
-
-  //     axios
-  //       .post(`${API_URL}/auth/register`, details)
-  //       .then((response) => {
-  //         localStorage.setItem("user", JSON.stringify(response.data.data));
-  //         navigate("/tasklist");
-  //       })
-  //       .catch((error) => {
-  //         // TODO: handle error
-  //       })
-  //       .finally(() => {
-  //         setIsLoading(false);
-  //       });
-  //   };
+    network
+      .register(details)
+      .then((response) => {
+        navigate("/login");
+      })
+      .catch((error) => {
+        toast.error(JSON.stringify(error.response.data));
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  };
 
   return (
-    <form
-      className="form"
-      // onSubmit={handleSubmit}
-    >
+    <form className="form" onSubmit={handleSubmit}>
+      <ToastContainer />
       <h4 className="">
-        {/* {isLoading ? "Getting  you onboard" : "Sign up to get sarted "} */}
-        Sign up to get sarted
+        {isLoading ? "Getting  you onboard" : "Sign up to get sarted "}
       </h4>
       <label htmlFor="Email">Email:</label>
       <input
@@ -52,8 +48,8 @@ function Signup() {
         name="email"
         placeholder="eg. janedoe@gmail.com"
         className=""
-        // value={email}
-        // onChange={(e) => setEmail(e.target.value)}
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         required
       />
 
@@ -62,9 +58,9 @@ function Signup() {
         type="text"
         name="name"
         placeholder="eg. Jane Doe"
-        // className=""
-        // value={full_name}
-        // onChange={(e) => setFullName(e.target.value)}
+        className=""
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
       />
 
       <label htmlFor="password">Password:</label>
@@ -72,11 +68,13 @@ function Signup() {
         type="password"
         name="password"
         className=""
-        // value={password}
-        // onChange={(e) => setPassword(e.target.value)}
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
       />
 
-      <button className="btn">sign up</button>
+      <button type="submit" className="btn">
+        sign up
+      </button>
       <p>
         Already have an account?{" "}
         <Link to="/login" className="formLink">

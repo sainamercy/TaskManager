@@ -1,75 +1,76 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import network from "../../utils/network";
+import { useNavigate } from "react-router-dom";
+import { storeToken } from "../../utils/auth";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Login() {
-    //   const [email, setEmail] = useState("");
-    //   const [password, setPassword] = useState("");
-    //   const [full_name, setFullName] = useState("");
-    //   const [isLoading, setIsLoading] = useState(false);
-  
-    //   const navigate = useNavigate();
-  
-    //   const handleSubmit = (e) => {
-    //     e.preventDefault();
-  
-    //     //TODO:: Handle validation
-    //     const details = {
-    //       email,
-    //       password,
-    //       full_name,
-    //     };
-  
-    //     setIsLoading(true);
-  
-    //     axios
-    //       .post(`${API_URL}/auth/register`, details)
-    //       .then((response) => {
-    //         localStorage.setItem("user", JSON.stringify(response.data.data));
-    //         navigate("/tasklist");
-    //       })
-    //       .catch((error) => {
-    //         // TODO: handle error
-    //       })
-    //       .finally(() => {
-    //         setIsLoading(false);
-    //       });
-    //   };
-  
-    return (
-      <form
-        className="form"
-        // onSubmit={handleSubmit}
-      >
-        <h4 className="">
-          {/* {isLoading ? "Getting  you onboard" : "Sign up to get sarted "} */}
-          Login to see your tasks
-        </h4>
-        <label htmlFor="Email">Email:</label>
-        <input
-          type="text"
-          name="email"
-          placeholder="eg. janedoe@gmail.com"
-          className=""
-          // value={email}
-          // onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          name="password"
-          className=""
-          // value={password}
-          // onChange={(e) => setPassword(e.target.value)}
-        />
-  
-        <button className="btn">login</button>
-        <p>
-          Don't have an account?{" "}
-          <Link to="/signup" className="formLink">
-            sign up here
-          </Link>
-        </p>
-      </form>
-    );
-  }
-  
-  export default Login;
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    //TODO:: Handle validation
+    const details = {
+      email,
+      password,
+    };
+
+    setIsLoading(true);
+
+    network
+      .login(details)
+      .then((response) => {
+        storeToken(response.data.data.token);
+        navigate("/todos");
+      })
+      .catch((error) => {
+        toast.error(JSON.stringify(error.response.data));
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  };
+
+  return (
+    <form className="form" onSubmit={handleSubmit}>
+      <ToastContainer />
+      <h4 className="">
+        {isLoading ? "Getting  you onboard" : "Login to see your tasks"}
+      </h4>
+      <label htmlFor="Email">Email:</label>
+      <input
+        type="text"
+        name="email"
+        placeholder="eg. janedoe@gmail.com"
+        className=""
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
+      <label htmlFor="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        className=""
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+
+      <button className="btn">login</button>
+      <p>
+        Don't have an account?{" "}
+        <Link to="/signup" className="formLink">
+          sign up here
+        </Link>
+      </p>
+    </form>
+  );
+}
+
+export default Login;
