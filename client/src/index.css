@@ -279,6 +279,7 @@
   gap: 5px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-bottom: 10px;
 }
 .task-items{
   width: 100%;
@@ -291,4 +292,16 @@
 }
 .user{
   font-size: 1.8rem;
+}
+.fa-user{
+  margin-right: 3px;
+}
+.task-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.task-btn{
+  background-color: var(--color-general);
 }

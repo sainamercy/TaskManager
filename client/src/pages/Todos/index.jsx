@@ -30,9 +30,9 @@ function Todos({ user }) {
   useEffect(() => {
     getTodos();
   }, []);
-  const todos1 = todos?.filter((todo) => todo.status === "CREATED");
-  const todos2 = todos?.filter((todo) => todo.status === "STARTED");
-  const todos3 = todos?.filter((todo) => todo.status === "COMPLETED");
+  const createdTodos = todos?.filter((todo) => todo.status === "CREATED");
+  const ongoingTodos = todos?.filter((todo) => todo.status === "STARTED");
+  const completedTodos = todos?.filter((todo) => todo.status === "COMPLETED");
   return (
     <div className="todos">
       {/* todos nav */}
@@ -48,7 +48,9 @@ function Todos({ user }) {
                 + Add new task
               </Link>
             </li>
-            <li className="nav__item user">👤 {user || "Guest"}</li>
+            <li className="nav__item user">
+              <i className="fa-solid fa-user"></i> {user || "Guest"}
+            </li>
           </ul>
         </nav>
       </div>
@@ -57,17 +59,17 @@ function Todos({ user }) {
         <TaskGroup
           groupTitle={"Todo"}
           groupDescription={"This item hasn't been started"}
-          todos={todos1}
+          todos={createdTodos}
         />
         <TaskGroup
           groupTitle={"Ongoing"}
           groupDescription={"This is actively being worked on"}
-          todos={todos2}
+          todos={ongoingTodos}
         />
         <TaskGroup
           groupTitle={"Completed"}
           groupDescription={"This has been completed"}
-          todos={todos3}
+          todos={completedTodos}
         />
       </div>
     </div>
