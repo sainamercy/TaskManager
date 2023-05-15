@@ -30,7 +30,7 @@ function Login({ setUser }) {
         setUser(response.data.data.user);
       })
       .catch((error) => {
-        toast.error(JSON.stringify(error.response.data));
+        toast.error(JSON.stringify(error.response.data.message));
       })
       .finally(() => {
         setIsLoading(false);

@@ -1,9 +1,9 @@
-function TaskItem({ title, priority, status }) {
+function TaskItem({ task }) {
   return (
     <div className="task-item">
-      <h3>{title}</h3>
-      <div>priority:{priority}</div>
-      <div>status:{status}</div>
+      <h3>{task.title}</h3>
+      <div>priority:{task.priority}</div>
+      <div>status:{task.status}</div>
     </div>
   );
 }

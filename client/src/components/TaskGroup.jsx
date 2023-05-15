@@ -1,25 +1,29 @@
 import TaskItem from "./TaskItem";
 
-function TaskGroup({ title, description }) {
+function TaskGroup({ groupTitle, groupDescription, todos }) {
   const titleColor = () => {
-    if (title === "Todo") {
+    if (groupTitle === "Todo") {
       return "red circle";
-    } else if (title === "Ongoing") {
+    } else if (groupTitle === "Ongoing") {
       return "orange circle";
     } else {
       return "green circle";
     }
   };
+
   return (
     <div className="taskGroup">
       <div className="taskTitle">
         <div className={titleColor()}></div>
-        <h3>{title}</h3>
+        <h3>{groupTitle}</h3>
       </div>
-      <p>{description}</p>
+      <p>{groupDescription}</p>
       <div className="task-items">
-        <TaskItem priority="High" status="Done" title="Task 1" />
-        <TaskItem priority="High" status="Done" title="Task 1" />
+        {todos.length === 0 ? (
+          <p className="no-tasks task-item">No tasks yet!</p>
+        ) : (
+          todos?.map((task) => <TaskItem key={task.id} task={task} />)
+        )}
       </div>
     </div>
   );

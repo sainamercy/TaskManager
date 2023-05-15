@@ -41,7 +41,7 @@ function Navbar() {
           </>
         )}
         {token && (
-          <li className="nav__item nav__link--btn" onClick={onlogout}>
+          <li className="nav__item" onClick={onlogout}>
             <Link className="nav__link nav__link--btn ">Logout</Link>
           </li>
         )}

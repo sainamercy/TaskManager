@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import network from "../../utils/network";
 
 const Priority = ({ currentValue, setPriority }) => {
   let priorities = [
@@ -47,15 +48,32 @@ function NewTask() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState(0);
-  //   const { user } = useAuthContext();
   const navigate = useNavigate();
-
-  //   const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(title, description, priority);
-    navigate("/todos");
+    setIsLoading(true);
+    const details = {
+      title,
+      description,
+      priority,
+    };
+    network
+      .addTask(details)
+      .then((response) => {
+        console.log(response.data.data);
+        setTitle(response.data.data.title);
+        setDescription(response.data.data.description);
+        setPriority(response.data.data.priority);
+        navigate("/todos");
+      })
+      .catch((error) => {
+        toast.error(JSON.stringify(error.response.data.message));
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
   return (
     <form onSubmit={handleSubmit} className="newTaskForm form">

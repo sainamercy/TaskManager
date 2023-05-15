@@ -7,24 +7,19 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Todos({ user }) {
-  // const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([]);
   const [loading, setLoading] = useState(false);
-  // // form data
-  // const [title, setTitle] = useState("");
-  // const [description, setDescription] = useState("");
-  // const [status, setStatus] = useState(0);
-  // const [priority, setPriority] = useState(0);
-  // const [todoId, setTodoId] = useState(null);
+
   const navigate = useNavigate();
 
   const getTodos = async () => {
     setLoading(true);
-    if (user) {
+    if (isUserLoggedIn()) {
       try {
         const response = await network.getTasks();
-        console.log(response.data.data);
+        setTodos(response.data.data);
       } catch (err) {
-        // toast.error(JSON.stringify(err.message));
+        toast.error(JSON.stringify(err.message));
         console.log(err.message);
       }
       setLoading(false);
@@ -35,6 +30,9 @@ function Todos({ user }) {
   useEffect(() => {
     getTodos();
   }, []);
+  const todos1 = todos?.filter((todo) => todo.status === "CREATED");
+  const todos2 = todos?.filter((todo) => todo.status === "STARTED");
+  const todos3 = todos?.filter((todo) => todo.status === "COMPLETED");
   return (
     <div className="todos">
       {/* todos nav */}
@@ -50,23 +48,26 @@ function Todos({ user }) {
                 + Add new task
               </Link>
             </li>
-            <li className="nav__item">{user || "Guest"}</li>
+            <li className="nav__item user">👤 {user || "Guest"}</li>
           </ul>
         </nav>
       </div>
       {/* main sec */}
       <div className="todosCont">
         <TaskGroup
-          title={"Todo"}
-          description={"This item hasn't been started"}
+          groupTitle={"Todo"}
+          groupDescription={"This item hasn't been started"}
+          todos={todos1}
         />
         <TaskGroup
-          title={"Ongoing"}
-          description={"This is actively being worked on"}
+          groupTitle={"Ongoing"}
+          groupDescription={"This is actively being worked on"}
+          todos={todos2}
         />
         <TaskGroup
-          title={"Completed"}
-          description={"This has been completed"}
+          groupTitle={"Completed"}
+          groupDescription={"This has been completed"}
+          todos={todos3}
         />
       </div>
     </div>

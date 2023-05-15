@@ -286,3 +286,9 @@
   height: 90%;
   margin-top: 10px;
 }
+.no-tasks{
+  color: var(--color-general);
+}
+.user{
+  font-size: 1.8rem;
+}

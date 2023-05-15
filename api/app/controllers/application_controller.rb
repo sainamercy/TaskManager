@@ -78,7 +78,7 @@ class ApplicationController < ActionController::API
     end
     # rescue all common errors
     def standard_error(exception)
-        app_response(message: 'failed', data: exception.message , status: :unprocessable_entity)
+        app_response(message: 'failed', data: exception.message, status: :unprocessable_entity)
     end
 
 end
