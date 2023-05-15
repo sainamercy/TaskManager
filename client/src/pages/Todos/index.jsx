@@ -15,16 +15,22 @@ function Todos({ user }) {
   // const [status, setStatus] = useState(0);
   // const [priority, setPriority] = useState(0);
   // const [todoId, setTodoId] = useState(null);
+  const navigate = useNavigate();
 
   const getTodos = async () => {
     setLoading(true);
-    try {
-      const response = await network.getTasks();
-      console.log(response.data.data);
-    } catch (err) {
-      toast.error(JSON.stringify(err));
+    if (user) {
+      try {
+        const response = await network.getTasks();
+        console.log(response.data.data);
+      } catch (err) {
+        // toast.error(JSON.stringify(err.message));
+        console.log(err.message);
+      }
+      setLoading(false);
+    } else {
+      navigate("/login");
     }
-    setLoading(false);
   };
   useEffect(() => {
     getTodos();

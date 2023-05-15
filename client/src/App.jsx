@@ -19,13 +19,10 @@ function App() {
     if (token) {
       try {
         const response = await network.autoLogin();
-        console.log(response.data);
         setUser(response.data);
       } catch (err) {
         // toast.error(JSON.stringify(err.response.message));
       }
-    } else {
-      navigate("/");
     }
   };
   useEffect(() => {
