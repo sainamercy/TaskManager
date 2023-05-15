@@ -5,21 +5,19 @@ import { useNavigate } from "react-router-dom";
 import { storeToken } from "../../utils/auth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-function Login() {
+function Login({ setUser }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    //TODO:: Handle validation
     const details = {
       email,
       password,
     };
+    //TODO:: Handle validation
 
     setIsLoading(true);
 
@@ -28,6 +26,8 @@ function Login() {
       .then((response) => {
         storeToken(response.data.data.token);
         navigate("/todos");
+        console.log(response.data.data.user);
+        setUser(response.data.data.user);
       })
       .catch((error) => {
         toast.error(JSON.stringify(error.response.data));

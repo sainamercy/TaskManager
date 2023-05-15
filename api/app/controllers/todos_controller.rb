@@ -26,8 +26,8 @@ class TodosController < ApplicationController
     end
 
     def index
-        todos = user.todos.all
-        app_response(message: 'success', data: todos)
+        todos = user.todos.all   
+        app_response(message: 'success', data: todos)   
     end
 
     private

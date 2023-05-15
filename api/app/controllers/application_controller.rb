@@ -11,11 +11,10 @@ class ApplicationController < ActionController::API
     end
 
     # hash data into webtoken
-    def encode(uid, email)
-        payload = {
+    def encode(uid)
+        payload={
             data:{
-                uid: uid,
-                email: email
+                uid: uid
             },
             exp: Time.now.to_i + (6*3600)
         }
@@ -29,9 +28,9 @@ class ApplicationController < ActionController::API
     # unhash the token
     def decode(token)
         begin
-        JWT.decode(token, ENV['task_bit_key'], true, {algorithm: 'HS256'})
+        JWT.decode(token, ENV['task_bit_key'], false, {algorithm: 'HS256'})
         rescue JWT::DecodeError => e  
-            app_response(message: 'failed', status: 401, data: { info: 'Your session has expired. Please login again to continue' })
+            app_response(message: 'failed', status: 401, data: { info: e.message })
         end
     end
 
@@ -46,19 +45,11 @@ class ApplicationController < ActionController::API
         end
     end
 
-    # request = {
-    #     headers: {
-    #         Authorization: 'Bearer token_here' 
-    #     },
-    #     body:{
-
-    #     },
-    #     method: 'GET'
-    # }
     # store user id in session
     def save_user(id)
         session[:uid] = id
         session[:expiry] = 6.hours.from_now
+        puts session[:expiry]
     end
 
     # delete user id in session
@@ -70,29 +61,24 @@ class ApplicationController < ActionController::API
     # check for session expiry
     def session_expired?
         session[:expiry] ||= Time.now
-        time_diff = Time.parse(session[:expiry]).to_i - Time.now.to_i
+        time_diff = Time.parse(session[:expiry].to_s) - Time.now
+        puts "time_diff: #{time_diff}"
 
         unless time_diff > 0
             app_response(message: 'failed', status: 401, data: { info: 'Your session has expired. Please login again to continue' })
         end
     end
 
-    # get logged in user(session)
-    # def user
-    #     User.find(session[:uid].to_i)
-    # end
-
+    def save_user_id(token)
+        @uid = decode(token)[0]['data']['uid'].to_i
+    end
 
     def user
         User.find(@uid)
     end
-
-    def save_user_id(token)
-        @uid = decode(token)[0]['data']['uid'].to_i
-    end
     # rescue all common errors
     def standard_error(exception)
-        app_response(message: 'failed', data: { info: exception.message }, status: :unprocessable_entity)
+        app_response(message: 'failed', data: exception.message , status: :unprocessable_entity)
     end
 
 end

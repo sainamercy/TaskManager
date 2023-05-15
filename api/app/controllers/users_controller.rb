@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
-    before_action :session_expired?, only: [:check_login_status]
+    # before_action :session_expired?, only: [:show]
+    before_action :verify_auth, only: [:show]
 
     def register
         user = User.create(user_params)
@@ -17,7 +18,7 @@ class UsersController < ApplicationController
         user = User.where(sql, { username: user_params[:username], email: user_params[:email] }).first
         if user&.authenticate(user_params[:password])
             save_user(user.id)
-            token = encode(user.id, user.email)
+            token = encode(user.id)
             app_response(message: 'Login was successful', status: :ok, data: {user: user, token: token})
         else
             app_response(message: 'Invalid username/email or password', status: :unauthorized)
@@ -29,8 +30,10 @@ class UsersController < ApplicationController
         app_response(message: 'Logout successful')
     end
 
-    def check_login_status
-        app_response(message: 'success', status: :ok)
+    # autologin
+    def show
+        # current_user = User.find_by(id: session[:uid])
+        render json: user
     end
 
 private

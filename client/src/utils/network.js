@@ -30,7 +30,9 @@ const addTask = (data) => {
 };
 
 const getTasks = () => {
-  return instance().get("/todos");
+  if (getToken()) {
+    return instance().get("/todos");
+  }
 };
 
 const updateTask = (id, data) => {
@@ -39,6 +41,9 @@ const updateTask = (id, data) => {
 
 const deleteTask = (id) => {
   return instance().delete(`/todos/${id}`);
+};
+const autoLogin = () => {
+  return instance().get("/users/login/check");
 };
 
 export default {
@@ -49,4 +54,5 @@ export default {
   getTasks,
   updateTask,
   deleteTask,
+  autoLogin,
 };

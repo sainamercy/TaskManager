@@ -1,9 +1,38 @@
-import { Link } from "react-router-dom";
 import TaskGroup from "../../components/TaskGroup";
-function Todos() {
+import { Link, useNavigate } from "react-router-dom";
+import { isUserLoggedIn } from "../../utils/auth";
+import { useEffect, useState } from "react";
+import network from "../../utils/network";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+function Todos({ user }) {
+  // const [todos, setTodos] = useState([]);
+  const [loading, setLoading] = useState(false);
+  // // form data
+  // const [title, setTitle] = useState("");
+  // const [description, setDescription] = useState("");
+  // const [status, setStatus] = useState(0);
+  // const [priority, setPriority] = useState(0);
+  // const [todoId, setTodoId] = useState(null);
+
+  const getTodos = async () => {
+    setLoading(true);
+    try {
+      const response = await network.getTasks();
+      console.log(response.data.data);
+    } catch (err) {
+      toast.error(JSON.stringify(err));
+    }
+    setLoading(false);
+  };
+  useEffect(() => {
+    getTodos();
+  }, []);
   return (
     <div className="todos">
       {/* todos nav */}
+      <ToastContainer />
       <div className="todosNav">
         <nav className="nav">
           <Link to="/todos" className="nav__link">
@@ -15,7 +44,7 @@ function Todos() {
                 + Add new task
               </Link>
             </li>
-            <li className="nav__item">Mercy Saina</li>
+            <li className="nav__item">{user || "Guest"}</li>
           </ul>
         </nav>
       </div>
