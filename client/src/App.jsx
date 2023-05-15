@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import { getToken } from "./utils/auth";
 import network from "./utils/network";
 import { useNavigate } from "react-router-dom";
+
 function App() {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ function App() {
         // toast.error(JSON.stringify(err.response.message));
       }
     } else {
-      navigate("/login");
+      navigate("/");
     }
   };
   useEffect(() => {
