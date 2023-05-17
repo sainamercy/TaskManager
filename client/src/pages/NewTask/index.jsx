@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import network from "../../utils/network";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Priority = ({ currentValue, setPriority }) => {
   let priorities = [
@@ -66,7 +68,7 @@ function NewTask() {
         navigate("/todos");
       })
       .catch((error) => {
-        toast.error(JSON.stringify(error.response.data.message));
+        toast.error(JSON.stringify(error.response.data.data));
       })
       .finally(() => {
         setIsLoading(false);
@@ -75,6 +77,7 @@ function NewTask() {
   return (
     <form onSubmit={handleSubmit} className="newTaskForm form">
       <div className="addHead">
+        <ToastContainer />
         <h3>Add New Task!</h3>
         <div className="exit">
           <Link to="/todos" className="nav__link">

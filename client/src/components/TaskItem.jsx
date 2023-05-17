@@ -1,5 +1,6 @@
 import { useState } from "react";
 import network from "../utils/network";
+import Modal from "./Modal";
 
 const TaskStatus = ({ currentValue, onChange }) => {
   const statusStyle = () => {
@@ -34,11 +35,14 @@ const TaskStatus = ({ currentValue, onChange }) => {
 
 function TaskItem({ task }) {
   const [showDetails, setShowDetail] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  // const [confirmDelete, setDelete] = useState(false);
   const handleShowDetails = () => {
     setShowDetail(!showDetails);
   };
   const deleteTask = () => {
     network.deleteTask(task.id);
+    setShowModal(false);
     window.location.reload();
   };
   const handleSubmit = (newStatus) => {
@@ -62,7 +66,7 @@ function TaskItem({ task }) {
       <div className="task-header">
         <h3>{task.title}</h3>
         <i
-          className={`fa-solid ${
+          className={`fa-solid arrow ${
             showDetails ? "fa-chevron-up" : "fa-chevron-down"
           }`}
           onClick={handleShowDetails}
@@ -70,14 +74,28 @@ function TaskItem({ task }) {
       </div>
       {showDetails && <p>{task.description}</p>}
       <p>priority: {task.priority}</p>
-      <TaskStatus currentValue={task.status} onChange={handleSubmit} />
       {showDetails && (
         <div className="task-header">
+          <TaskStatus currentValue={task.status} onChange={handleSubmit} />
           <i className="fa-sharp fa-solid fa-pen-to-square task-btn"></i>
           <i
             className="fa-solid fa-trash-can task-btn"
-            onClick={deleteTask}
+            onClick={() => {
+              setShowModal(true);
+              // deleteTask();
+            }}
           ></i>
+          {showModal ? (
+            <Modal>
+              <div className="modal-content">
+                <h1>Are you sure you want to delete?</h1>
+                <div className="buttons">
+                  <button onClick={() => deleteTask()}>Yes</button>
+                  <button onClick={() => setShowModal(false)}>No</button>
+                </div>
+              </div>
+            </Modal>
+          ) : null}
         </div>
       )}
     </div>
