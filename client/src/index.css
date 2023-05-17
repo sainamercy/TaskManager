@@ -4,6 +4,7 @@
     --color-primary-darker: #0e49de;
     --color-tertiary-darker: #fd424b;
     --color-general: 	#C0C0C0;
+    --gradient-primary: linear-gradient(to top left, #4a77e9, #5de1cd);
   }
   
   * {
