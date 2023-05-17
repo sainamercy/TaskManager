@@ -3,6 +3,35 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import network from "../../utils/network";
 
+const TaskStatus = ({ currentValue, onChange }) => {
+  const statusStyle = () => {
+    if (currentValue === "CREATED") {
+      return "red";
+    } else if (currentValue === "ONGOING") {
+      return "orange";
+    } else {
+      return "green";
+    }
+  };
+  return (
+    <div className="flex justify-center px-2">
+      <div>
+        <select
+          className={`p-2 rounded-lg text-gray-100 ${statusStyle()}`}
+          defaultValue={currentValue}
+          onChange={(e) => {
+            onChange(e.target.value);
+          }}
+        >
+          <option value="CREATED">To Do</option>
+          <option value="ONGOING">In Progress</option>
+          <option value="COMPLETED">Complete</option>
+        </select>
+      </div>
+    </div>
+  );
+};
+
 const Priority = ({ currentValue, setPriority }) => {
   let priorities = [
     {
@@ -44,10 +73,11 @@ const Priority = ({ currentValue, setPriority }) => {
   );
 };
 
-function NewTask() {
+function UpdateTask() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState(0);
+  const [status, setStatus] = useState(0);
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -60,7 +90,7 @@ function NewTask() {
       priority,
     };
     network
-      .addTask(details)
+      .updateTask(details)
       .then((response) => {
         console.log(response.data.data);
         navigate("/todos");
@@ -105,6 +135,7 @@ function NewTask() {
         currentValue={priority}
         setPriority={(value) => setPriority(value)}
       />
+      <TaskStatus />
 
       <button className="btn" type="submit">
         Submit
@@ -113,4 +144,4 @@ function NewTask() {
   );
 }
 
-export default NewTask;
+export default UpdateTask;

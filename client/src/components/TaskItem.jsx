@@ -1,5 +1,37 @@
 import { useState } from "react";
 import network from "../utils/network";
+
+const TaskStatus = ({ currentValue, onChange }) => {
+  const statusStyle = () => {
+    if (currentValue === "CREATED") {
+      return "red";
+    } else if (currentValue === "STARTED") {
+      return "orange";
+    } else if (currentValue === "COMPLETED") {
+      return "green";
+    }
+  };
+
+  return (
+    <div className="status-container">
+      <div>
+        <select
+          className={`task-status ${statusStyle()}`}
+          defaultValue={currentValue}
+          onChange={(e) => {
+            onChange(e.target.value);
+          }}
+        >
+          <option value={null}>Status</option>
+          <option value="0">To Do</option>
+          <option value="1">On Going</option>
+          <option value="2">Completed</option>
+        </select>
+      </div>
+    </div>
+  );
+};
+
 function TaskItem({ task }) {
   const [showDetails, setShowDetail] = useState(false);
   const handleShowDetails = () => {
@@ -8,6 +40,21 @@ function TaskItem({ task }) {
   const deleteTask = () => {
     network.deleteTask(task.id);
     window.location.reload();
+  };
+  const handleSubmit = (newStatus) => {
+    const details = {
+      ...task,
+      status: +newStatus,
+    };
+    network
+      .updateTask(task.id, details)
+      .then((response) => {
+        window.location.reload();
+        console.log(response.data);
+      })
+      .catch((error) => {
+        toast.error(JSON.stringify(error.response.data.message));
+      });
   };
 
   return (
@@ -23,13 +70,16 @@ function TaskItem({ task }) {
       </div>
       {showDetails && <p>{task.description}</p>}
       <p>priority: {task.priority}</p>
-      <p>Move to: {task.status}</p>
-      <div className="task-header">
-        <button className="btn  task-btn">Edit</button>
-        <button className="btn  task-btn" onClick={deleteTask}>
-          delete
-        </button>
-      </div>
+      <TaskStatus currentValue={task.status} onChange={handleSubmit} />
+      {showDetails && (
+        <div className="task-header">
+          <i className="fa-sharp fa-solid fa-pen-to-square task-btn"></i>
+          <i
+            className="fa-solid fa-trash-can task-btn"
+            onClick={deleteTask}
+          ></i>
+        </div>
+      )}
     </div>
   );
 }
