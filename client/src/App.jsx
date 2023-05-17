@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import { getToken } from "./utils/auth";
 import network from "./utils/network";
 import { useNavigate } from "react-router-dom";
+import UpdateTask from "./pages/UpdateTask";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -38,6 +39,7 @@ function App() {
         <Route path="/login" element={<Login setUser={setUser} />} />
         <Route path="/newtask" element={<NewTask />} />
         <Route path="/todos" element={<Todos user={user?.username} />} />
+        <Route path="/update/:id" element={<UpdateTask />} />
       </Routes>
     </div>
   );

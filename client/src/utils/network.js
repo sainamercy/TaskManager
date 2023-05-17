@@ -39,6 +39,10 @@ const updateTask = (id, data) => {
   return instance().put(`/todos/${id}`, data);
 };
 
+const getTask = (id) => {
+  return instance().get(`/todos/${id}`);
+};
+
 const deleteTask = (id) => {
   return instance().delete(`/todos/${id}`);
 };
@@ -55,4 +59,5 @@ export default {
   updateTask,
   deleteTask,
   autoLogin,
+  getTask,
 };

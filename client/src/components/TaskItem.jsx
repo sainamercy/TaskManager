@@ -1,6 +1,7 @@
 import { useState } from "react";
 import network from "../utils/network";
 import Modal from "./Modal";
+import { Link } from "react-router-dom";
 
 const TaskStatus = ({ currentValue, onChange }) => {
   const statusStyle = () => {
@@ -77,12 +78,13 @@ function TaskItem({ task }) {
       {showDetails && (
         <div className="task-header">
           <TaskStatus currentValue={task.status} onChange={handleSubmit} />
-          <i className="fa-sharp fa-solid fa-pen-to-square task-btn"></i>
+          <Link to={`/update/${task.id}`}>
+            <i className="fa-sharp fa-solid fa-pen-to-square task-btn"></i>
+          </Link>
           <i
             className="fa-solid fa-trash-can task-btn"
             onClick={() => {
               setShowModal(true);
-              // deleteTask();
             }}
           ></i>
           {showModal ? (

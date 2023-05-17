@@ -1,38 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import network from "../../utils/network";
-
-const TaskStatus = ({ currentValue, onChange }) => {
-  const statusStyle = () => {
-    if (currentValue === "CREATED") {
-      return "red";
-    } else if (currentValue === "ONGOING") {
-      return "orange";
-    } else {
-      return "green";
-    }
-  };
-  return (
-    <div className="flex justify-center px-2">
-      <div>
-        <select
-          className={`p-2 rounded-lg text-gray-100 ${statusStyle()}`}
-          defaultValue={currentValue}
-          onChange={(e) => {
-            onChange(e.target.value);
-          }}
-        >
-          <option value="CREATED">To Do</option>
-          <option value="ONGOING">In Progress</option>
-          <option value="COMPLETED">Complete</option>
-        </select>
-      </div>
-    </div>
-  );
-};
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Priority = ({ currentValue, setPriority }) => {
+  console.log(currentValue);
   let priorities = [
     {
       id: 0,
@@ -60,7 +34,8 @@ const Priority = ({ currentValue, setPriority }) => {
             name={"priority"}
             id={name}
             value={id}
-            defaultChecked={currentValue === id}
+            // defaultChecked={currentValue == name || currentValue == id}
+            checked={currentValue == name || currentValue == id}
             required
             onChange={() => setPriority(id)}
           />
@@ -76,11 +51,29 @@ const Priority = ({ currentValue, setPriority }) => {
 function UpdateTask() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [priority, setPriority] = useState(0);
-  const [status, setStatus] = useState(0);
+  const [priority, setPriority] = useState("");
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
+  const { id } = useParams();
+
+  const getTodo = async () => {
+    setIsLoading(true);
+    try {
+      const response = await network.getTask(id);
+      console.log(response.data.data);
+      setTitle(response.data.data.title);
+      setDescription(response.data.data.description);
+      setPriority(response.data.data.priority);
+    } catch (err) {
+      toast.error(JSON.stringify(err.response.data.message));
+      console.log(err.response.data.message);
+    }
+    setIsLoading(false);
+  };
+  useEffect(() => {
+    getTodo();
+  }, [id]);
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -90,22 +83,24 @@ function UpdateTask() {
       priority,
     };
     network
-      .updateTask(details)
+      .updateTask(id, details)
       .then((response) => {
         console.log(response.data.data);
         navigate("/todos");
       })
       .catch((error) => {
-        toast.error(JSON.stringify(error.response.data.message));
+        toast.error(JSON.stringify(error.response.data));
       })
       .finally(() => {
         setIsLoading(false);
       });
   };
+
   return (
     <form onSubmit={handleSubmit} className="newTaskForm form">
       <div className="addHead">
-        <h3>Add New Task!</h3>
+        <ToastContainer />
+        <h3>Update Task!</h3>
         <div className="exit">
           <Link to="/todos" className="nav__link">
             x
@@ -135,8 +130,6 @@ function UpdateTask() {
         currentValue={priority}
         setPriority={(value) => setPriority(value)}
       />
-      <TaskStatus />
-
       <button className="btn" type="submit">
         Submit
       </button>

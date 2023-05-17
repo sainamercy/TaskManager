@@ -25,6 +25,15 @@ class TodosController < ApplicationController
         app_response(status: 204)
     end
 
+    def show
+        todo = user.todos.find(params[:id])
+        if todo
+            app_response(message: 'success', data: todo)  
+        else
+            app_response(message: 'failed', data: { info: 'not found' }, status: 404)
+        end
+    end
+
     def index
         todos = user.todos.all   
         app_response(message: 'success', data: todos)   
