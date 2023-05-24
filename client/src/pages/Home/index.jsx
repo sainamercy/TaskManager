@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { isUserLoggedIn } from "../../utils/auth";
 
 function Home() {
   return (
@@ -12,9 +13,15 @@ function Home() {
           A simple and user-friendly app designed to help you stay on top of
           your tasks and increase your productivity.{" "}
         </h4>
-        <Link to="/signup">
-          <button className="btnText">Get Started &rarr;</button>
-        </Link>
+        {isUserLoggedIn() ? (
+          <Link to="/todos">
+            <button className="btnText">See your tasks &rarr;</button>
+          </Link>
+        ) : (
+          <Link to="/signup">
+            <button className="btnText">Get Started &rarr;</button>
+          </Link>
+        )}
       </div>
       <div>
         <img
