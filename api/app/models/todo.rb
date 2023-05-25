@@ -4,11 +4,9 @@ class Todo < ApplicationRecord
   enum :priority, [:LOW, :MEDIUM, :HIGH]
 
   validates :title, {
-    length: {minimum: 5, maximum: 25},
     presence: true
   }
   validates :description, {
-    length: {minimum: 20},
     presence: true
   }
   # validates :status, {
