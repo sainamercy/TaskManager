@@ -55,7 +55,7 @@ function TaskItem({ task }) {
       .updateTask(task.id, details)
       .then((response) => {
         window.location.reload();
-        window.location.href = "/todos";
+        window.location.href = "https://taskbit-sigma.vercel.app/todos";
         console.log(response.data);
       })
       .catch((error) => {
