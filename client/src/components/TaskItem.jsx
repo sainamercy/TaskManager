@@ -55,6 +55,7 @@ function TaskItem({ task }) {
       .updateTask(task.id, details)
       .then((response) => {
         window.location.reload();
+        window.location.href = "/todos";
         console.log(response.data);
       })
       .catch((error) => {
