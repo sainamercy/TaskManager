@@ -4,7 +4,7 @@ import { removeToken } from "./auth";
 
 const instance = () =>
   axios.create({
-    baseURL: "http://127.0.0.1:3000",
+    baseURL: "https://taskbit-byx7.onrender.com",
     timeout: 60000,
     headers: {
       "Content-Type": "application/json",
