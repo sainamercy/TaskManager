@@ -398,8 +398,8 @@
     right: 0;
     top: 6rem;
     flex-direction: column;
-    /* left: 60%; */
-    background-color: rgba(0, 0, 0, 0.347);
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.482);
     color: white;
   }
   .ham{
