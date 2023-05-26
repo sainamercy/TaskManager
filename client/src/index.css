@@ -399,7 +399,7 @@
     top: 6rem;
     flex-direction: column;
     left: 0;
-    background-color: rgba(9, 9, 9, 0.82);
+    background-color: rgba(27, 27, 27, 0.82);
   }
   .ham{
     display: block;
