@@ -399,7 +399,7 @@
     top: 6rem;
     flex-direction: column;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.482);
+    background-color: gray;
     color: white;
   }
   .ham{
@@ -413,7 +413,6 @@
   }
   .nav__link--btn{
     background-color: transparent;
-    color: white;
   }
   .nav__link--btn:hover,.nav__link--btn:active{
     background-color: transparent;
@@ -426,4 +425,5 @@
   .nav__item{
     margin-left: 0;
   }
+
 }
