@@ -360,3 +360,11 @@
 #modal button{
   width: 50px;
 }
+
+/* media queries */
+
+@media (max-width: 1000px) {
+  .mainTitle{
+    flex-wrap: wrap;
+  }
+}
