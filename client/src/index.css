@@ -399,8 +399,7 @@
     top: 6rem;
     flex-direction: column;
     left: 0;
-    background-color: gray;
-    color: white;
+    background-color: rgb(232, 232, 232);
   }
   .ham{
     display: block;
@@ -414,16 +413,18 @@
   .nav__link--btn{
     background-color: transparent;
   }
-  .nav__link--btn:hover,.nav__link--btn:active{
-    background-color: transparent;
-  }
   .nav__link--btn:link,
   .nav__link--btn:visited {
     background-color: transparent;
-    color: white;
+    color: #333;
+    padding: 0;
   }
   .nav__item{
     margin-left: 0;
+    border-bottom: 1px solid var(--color-general);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #333;
   }
-
 }
