@@ -427,9 +427,7 @@
     padding: 10px;
     color: var(--color-general);
   }
-}
-/* @media (max-width: 450px){
-  .form{
-    max-width: 380px;
+  .main{
+    padding: 0;
   }
-} */
+}
