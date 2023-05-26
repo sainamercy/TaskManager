@@ -162,7 +162,7 @@
   .form{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    max-width: 400px;
     margin: auto;
     border: 1px solid var(--color-general);
     padding: 30px;
@@ -428,3 +428,8 @@
     color: var(--color-general);
   }
 }
+/* @media (max-width: 450px){
+  .form{
+    max-width: 380px;
+  }
+} */
