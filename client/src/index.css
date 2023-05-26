@@ -394,12 +394,36 @@
 }
 @media (max-width: 800px){
   .nav__links{
-    display: none;
+    position: absolute;
+    right: 0;
+    top: 6rem;
+    flex-direction: column;
+    /* left: 60%; */
+    background-color: rgba(0, 0, 0, 0.347);
+    color: white;
   }
   .ham{
     display: block;
   }
   .nav{
     padding: 0;
+  }
+  .hidden{
+    display: none;
+  }
+  .nav__link--btn{
+    background-color: transparent;
+    color: white;
+  }
+  .nav__link--btn:hover,.nav__link--btn:active{
+    background-color: transparent;
+  }
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    background-color: transparent;
+    color: white;
+  }
+  .nav__item{
+    margin-left: 0;
   }
 }
