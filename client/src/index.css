@@ -360,6 +360,10 @@
 #modal button{
   width: 50px;
 }
+.ham{
+  display: none;
+  font-size: 2.5rem;
+}
 
 /* media queries */
 
@@ -368,16 +372,11 @@
     gap: 30px;
     flex-direction: column-reverse;
     flex: none;
-    /* max-width: 95%; */
-  }
-  .nav__links{
-    display: none;
   }
   .mainTitle img{
     max-width: 100%;
     margin: auto;
   }
-
   h1{
     font-size: 4.5rem;
   }
@@ -391,5 +390,16 @@
   }
   h4{
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 800px){
+  .nav__links{
+    display: none;
+  }
+  .ham{
+    display: block;
+  }
+  .nav{
+    padding: 0;
   }
 }

@@ -13,6 +13,7 @@ function Navbar() {
       <Link to="/">
         <img src="/assets/logof.png" alt=" logo" className="nav__logo" />
       </Link>
+      <i className="fa-solid fa-bars ham"></i>
       <ul className="nav__links">
         <li className="nav__item">
           <Link className="nav__link" to="/">
