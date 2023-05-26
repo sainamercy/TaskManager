@@ -17,7 +17,7 @@ function Navbar() {
     setActive(!active);
   };
   return (
-    <nav className="nav">
+    <nav id="navbar" className="nav">
       <Link to="/">
         <img src="/assets/logof.png" alt=" logo" className="nav__logo" />
       </Link>

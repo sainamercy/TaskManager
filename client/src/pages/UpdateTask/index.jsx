@@ -61,13 +61,11 @@ function UpdateTask() {
     setIsLoading(true);
     try {
       const response = await network.getTask(id);
-      console.log(response.data.data);
       setTitle(response.data.data.title);
       setDescription(response.data.data.description);
       setPriority(response.data.data.priority);
     } catch (err) {
       toast.error(JSON.stringify(err.response.data.message));
-      console.log(err.response.data.message);
     }
     setIsLoading(false);
   };

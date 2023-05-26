@@ -85,7 +85,7 @@
   /* Main */
 .main {
     padding: 0 3rem;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,7 +203,7 @@
 .todos{
   width: 90%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  height: 87%;
+  min-height: 87vh;
   margin-top: 10px;
   border-radius: 10px;
 }
@@ -230,8 +230,8 @@
   border: 1px solid var(--color-general);
   width: 30%;
   border-radius: 10px;
-  /* overflow-y: scroll; */
   padding: 16px;
+  min-height: 78vh;
 }
 .taskGroup h3{
   font-size: 2rem;
@@ -245,7 +245,6 @@
   margin: auto;
   justify-content: space-evenly;
   margin-top: 20px;
-  height: 85%;
 }
 .red{
   background-color: var(--color-tertiary-darker);
@@ -411,7 +410,7 @@
   }
 }
 @media (max-width: 800px){
-  .nav__links{
+  #navbar .nav__links{
     position: absolute;
     right: 0;
     top: 6rem;
@@ -428,16 +427,16 @@
   .hidden{
     display: none;
   }
-  .nav__link--btn{
+  #navbar .nav__link--btn{
     background-color: transparent;
   }
-  .nav__link--btn:link,
-  .nav__link--btn:visited {
+  #navbar .nav__link--btn:link,
+  #navbar .nav__link--btn:visited {
     background-color: transparent;
     color: var(--color-general);
     padding: 0;
   }
-  .nav__item{
+  #navbar .nav__item{
     margin-left: 0;
     border-bottom: 1px solid var(--color-general);
     width: 100%;
@@ -455,4 +454,29 @@
   .form{
     max-width: 350px;
   }
+  .todos{
+    width: 100%;
+  }
+}
+@media (max-width: 1400px){
+  .todosCont{
+    flex-direction: column;
+    min-height: fit-content;
+    gap: 10px;
+  }
+  .taskGroup{
+    width: 100%;
+    min-height: fit-content;
+    margin: auto;
+  }
+} 
+@media (max-width: 650px){
+.todos .nav{
+  padding: 0;
+}
+}
+@media (max-width: 420px){
+.todos .nav__item{
+  margin-left: 2rem;
+}
 }

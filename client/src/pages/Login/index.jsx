@@ -26,7 +26,6 @@ function Login({ setUser }) {
       .then((response) => {
         storeToken(response.data.data.token);
         navigate("/todos");
-        console.log(response.data.data.user);
         setUser(response.data.data.user);
       })
       .catch((error) => {

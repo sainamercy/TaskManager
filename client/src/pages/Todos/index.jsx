@@ -20,7 +20,6 @@ function Todos({ user }) {
         setTodos(response.data.data);
       } catch (err) {
         toast.error(JSON.stringify(err.message));
-        console.log(err.message);
       }
       setLoading(false);
     } else {
@@ -45,7 +44,7 @@ function Todos({ user }) {
           <ul className="nav__links">
             <li className="nav__item">
               <Link className="nav__link" to="/newtask">
-                + Add new task
+                + Add task
               </Link>
             </li>
             <li className="nav__item user">
