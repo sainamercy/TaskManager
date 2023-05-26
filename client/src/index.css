@@ -365,6 +365,30 @@
 
 @media (max-width: 1000px) {
   .mainTitle{
-    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: column-reverse;
+    flex: none;
+  }
+  .nav__links{
+    display: none;
+  }
+  .mainTitle img{
+    max-width: 90%;
+    margin: auto;
+  }
+
+  h1{
+    font-size: 4.5rem;
+  }
+  h4{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px){
+  h1{
+    font-size: 4rem;
+  }
+  h4{
+    font-size: 1.4rem;
   }
 }
