@@ -403,6 +403,9 @@
   .mainContent{
     width: 95%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 @media (max-width: 400px){
