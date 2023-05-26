@@ -399,7 +399,7 @@
     top: 6rem;
     flex-direction: column;
     left: 0;
-    background-color: rgb(232, 232, 232);
+    background-color: rgba(9, 9, 9, 0.82);
   }
   .ham{
     display: block;
@@ -416,7 +416,7 @@
   .nav__link--btn:link,
   .nav__link--btn:visited {
     background-color: transparent;
-    color: #333;
+    color: var(--color-general);
     padding: 0;
   }
   .nav__item{
@@ -425,6 +425,6 @@
     width: 100%;
     text-align: center;
     padding: 10px;
-    color: #333;
+    color: var(--color-general);
   }
 }
