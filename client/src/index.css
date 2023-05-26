@@ -368,12 +368,13 @@
     gap: 30px;
     flex-direction: column-reverse;
     flex: none;
+    /* max-width: 95%; */
   }
   .nav__links{
     display: none;
   }
   .mainTitle img{
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
   }
 
