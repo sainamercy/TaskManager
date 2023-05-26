@@ -4,7 +4,7 @@ import { isUserLoggedIn } from "../../utils/auth";
 function Home() {
   return (
     <div className="mainTitle">
-      <div>
+      <div className="mainContent">
         <h1>
           <span className="highlight">Conquer</span> your day with
           <span className="highlight">TaskBit</span>
