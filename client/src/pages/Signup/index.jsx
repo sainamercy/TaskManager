@@ -39,9 +39,14 @@ function Signup() {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <ToastContainer />
-      <h4 className="">
-        {isLoading ? "Getting  you onboard" : "Sign up to get sarted "}
-      </h4>
+      {isLoading ? (
+        <div className="loading">
+          <h4> Loading </h4>
+          <i className="fa-solid fa-spinner spinner"></i>
+        </div>
+      ) : (
+        <h4 className=""> Sign up to get sarted </h4>
+      )}
       <label htmlFor="Email">Email:</label>
       <input
         type="text"

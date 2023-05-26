@@ -40,9 +40,16 @@ function Login({ setUser }) {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <ToastContainer />
-      <h4 className="">
-        {isLoading ? "Getting  you onboard" : "Login to see your tasks"}
-      </h4>
+
+      {isLoading ? (
+        <div className="loading">
+          <h4> Getting you onboard </h4>
+          <i className="fa-solid fa-spinner spinner"></i>
+        </div>
+      ) : (
+        <h4 className=""> Login to see your tasks </h4>
+      )}
+
       <label htmlFor="Email">Email:</label>
       <input
         type="text"
