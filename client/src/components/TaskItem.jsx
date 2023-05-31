@@ -37,14 +37,16 @@ const TaskStatus = ({ currentValue, onChange }) => {
 function TaskItem({ task }) {
   const [showDetails, setShowDetail] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  // const [confirmDelete, setDelete] = useState(false);
   const handleShowDetails = () => {
     setShowDetail(!showDetails);
   };
   const deleteTask = () => {
     network.deleteTask(task.id);
     setShowModal(false);
-    window.location.reload();
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
+    // window.location.reload();
   };
   const handleSubmit = (newStatus) => {
     const details = {
