@@ -84,7 +84,7 @@ To run it in production
 - deployment link :
 
   ```
-   htaskbit-sigma.vercel.app - front end
+   https://taskbit-sigma.vercel.app/todos- front end
 
    https://taskbit-byx7.onrender.com - backend
 
@@ -119,7 +119,7 @@ To run it in production
   <br />
 
 - Tasks page
-  ![Events Image](client/public/assets/tasks.png)
+  ![Tasks Image](client/public/assets/tasks.png)
   <br />
 
 ## Contributing
