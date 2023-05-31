@@ -314,8 +314,16 @@
   padding-left: 2px;
   padding-right: 2px;
 }
+.headercont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .arrow{
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+.arrow-task-group{
+  display: none;
 }
 #modal {
   background-color: rgba(158, 155, 155, 0.549);
@@ -407,6 +415,7 @@
     flex-direction: column;
     gap: 10px;
   }
+ 
 }
 @media (max-width: 400px){
   h1{
@@ -466,6 +475,12 @@
   }
 }
 @media (max-width: 1400px){
+  .hidden{
+    display: none;
+  }
+  .arrow-task-group{
+    display: block;
+  }
   .todosCont{
     flex-direction: column;
     min-height: fit-content;
@@ -482,8 +497,14 @@
   padding: 0;
 }
 }
-@media (max-width: 420px){
+@media (max-width: 440px){
 .todos .nav__item{
   margin-left: 2rem;
+}
+.task-header h3{
+  font-size: 1.8rem;
+}
+.task-item{
+  width: 100%;
 }
 }
